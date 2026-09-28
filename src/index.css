@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@layer utilities {
+  /* Hide scrollbars for clean native mobile touch scroll */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  /* iOS smooth inertia bounce scrolling */
+  .smooth-scroll {
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* TradingView signature gradient */
+.tv-btn-gradient {
+  background: linear-gradient(135deg, #1e53e5 0%, #872df0 100%);
+  box-shadow: 0 4px 14px rgba(30, 83, 229, 0.3);
+}
+
+.tv-btn-gradient:hover {
+  background: linear-gradient(135deg, #1b49cb 0%, #7623d6 100%);
+  box-shadow: 0 6px 18px rgba(30, 83, 229, 0.4);
+}
+
+.tv-btn-gradient:active {
+  transform: scale(0.97);
+}
+
